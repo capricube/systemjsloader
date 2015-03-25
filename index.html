@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="jspm_packages/es6-module-loader"></script>
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+      "use strict";
+      console.log("test");
+      System.transpiler = 'babel';
+      System.import("./app-amd");
+    </script>
+  </head>
+  <body> 
+    <h1>testing system.js and jspm.io</h1>
+    <p> should load jquery and marionette</p>
+  </body>
+</html>
+
