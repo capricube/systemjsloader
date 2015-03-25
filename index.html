@@ -6,8 +6,10 @@
     <script src="config.js"></script>
     <script>
       console.log("test");
-      System.import("./bootstrap");
-      System.import("./app");
+      System.import("./bootstrap").then(function() {
+          System.import("./app");
+      });
+      
     </script>
   </head>
   <body> 
@@ -16,7 +18,7 @@
     <p> should load jquery and marionette</p>
 
     <script id="template" type="text/html">
-      im a template for your view
+      <div style="background-color: red;">im a template for your view</div>
     </script>
   </body>
 </html>

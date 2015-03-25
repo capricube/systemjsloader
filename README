@@ -1,1 +1,7 @@
 using latest jspm-cli#0.15.0-beta
+
+
+Just execute npm install 
+then jspm install 
+and finally node webapp
+application will be started as http://localhost:3001/
