@@ -1,5 +1,4 @@
-"use strict";
-
-define(['jquery'], function($) {
-    console.log("jquery loaded");
+define([ 'jquery', 'marionette' ], function($, Mn) {
+	console.log("Marionette.VERSION =  " + Mn.VERSION);
+	
 });
