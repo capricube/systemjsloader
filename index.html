@@ -6,12 +6,18 @@
     <script src="config.js"></script>
     <script>
       console.log("test");
-      System.import("./app-amd");
+      System.import("./bootstrap");
+      System.import("./app");
     </script>
   </head>
   <body> 
     <h1>testing system.js and jspm.io</h1>
+    <div id="view">render my view</div>
     <p> should load jquery and marionette</p>
+
+    <script id="template" type="text/html">
+      im a template for your view
+    </script>
   </body>
 </html>
 

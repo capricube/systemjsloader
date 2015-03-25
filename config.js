@@ -3,16 +3,26 @@ System.config({
     "*": "*.js",
     "github:*": "jspm_packages/github/*.js",
     "npm:*": "jspm_packages/npm/*.js"
+  },
+  "shim": {
+    "marionette": {
+      "deps": [
+        "underscore",
+        "backbone.wreqr",
+        "backbone.babysitter"
+      ]
+    }
   }
 });
 
 System.config({
   "map": {
     "backbone": "npm:backbone@1.1.2",
+    "backbone.babysitter": "github:marionettejs/backbone.babysitter@0.1.6",
+    "backbone.wreqr": "github:marionettejs/backbone.wreqr@1.3.2",
     "jquery": "github:components/jquery@2.1.3",
     "marionette": "github:marionettejs/backbone.marionette@2.4.1",
-    "traceur": "github:jmcriffey/bower-traceur@0.0.87",
-    "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.87",
+    "underscore": "npm:underscore@1.8.2",
     "github:jspm/nodelibs-process@0.1.1": {
       "process": "npm:process@0.10.1"
     },
